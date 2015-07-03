@@ -6,13 +6,15 @@ Developed for an Operating Systems course; gain experience with threads and proc
 
 ## Use
 
-``` UNIX
+``` C
 git clone https://github.com/skylerto/count-words.git
+
 cd count-words
+
 make
-./count {filename(s)}    // Single thread
-./process {filename(s)}  // Multi process
-./thread {filename(s)}   // Multi thread
+./count //{filename(s)}    // Single thread
+./process //{filename(s)}  // Multi process
+./thread //{filename(s)}   // Multi thread
 ```
 
 ## License
