@@ -19,6 +19,9 @@ make
 
 ## Examples
 
+Ran on...
+![alt tag](/img/specs.png)
+
 #### Single Threaded
 ```
 count-words $ time ./count dataset*
