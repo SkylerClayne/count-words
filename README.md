@@ -6,7 +6,7 @@ Developed for an Operating Systems course; gain experience with threads and proc
 
 ## Use
 
-``` C
+``` UNIX
 git clone https://github.com/skylerto/count-words.git
 cd count-words
 make
