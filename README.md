@@ -17,6 +17,22 @@ make
 ./thread //{filename(s)}   // Multi thread
 ```
 
+## Examples
+```
+count-words $ ./count dataset*
+dataset1.txt: 561 OK AND A
+dataset2.txt: 600 A AND IT'S
+dataset3.txt: 574 A IT'S OK
+count-words $ ./process dataset*
+dataset2.txt: 600 A AND IT'S
+dataset3.txt: 574 A IT'S OK
+dataset1.txt: 561 OK AND A
+count-words $ ./thread dataset*
+dataset2.txt: 600 A AND IT'S
+dataset3.txt: 574 A IT'S OK
+dataset1.txt: 561 OK AND A
+```
+
 ## License
 
 The MIT License (MIT)
