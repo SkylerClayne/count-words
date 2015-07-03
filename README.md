@@ -4,6 +4,17 @@
 
 Developed for an Operating Systems course; gain experience with threads and processes developing a simple command line app to count the number of repeated words in a text file.
 
+## Use
+
+``` C
+git clone https://github.com/skylerto/count-words.git
+cd count-words
+make
+./count {filename(s)}    // Single thread
+./process {filename(s)}  // Multi process
+./thread {filename(s)}   // Multi thread
+```
+
 ## License
 
 The MIT License (MIT)
