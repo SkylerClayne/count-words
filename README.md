@@ -18,19 +18,41 @@ make
 ```
 
 ## Examples
+
+#### Single Threaded
 ```
-count-words $ ./count dataset*
+count-words $ time ./count dataset*
 dataset1.txt: 561 OK AND A
 dataset2.txt: 600 A AND IT'S
 dataset3.txt: 574 A IT'S OK
-count-words $ ./process dataset*
+
+real	0m2.152s
+user	0m2.035s
+sys	0m0.019s
+```
+
+#### Multi Process
+```
+count-words $ time ./process dataset*
 dataset2.txt: 600 A AND IT'S
 dataset3.txt: 574 A IT'S OK
 dataset1.txt: 561 OK AND A
-count-words $ ./thread dataset*
+
+real	0m0.928s
+user	0m1.431s
+sys	0m0.012s
+```
+
+#### Multi threaded
+```
+count-words $ time ./thread dataset*
 dataset2.txt: 600 A AND IT'S
 dataset3.txt: 574 A IT'S OK
 dataset1.txt: 561 OK AND A
+
+real	0m0.897s
+user	0m2.298s
+sys	0m0.016s
 ```
 
 ## License
